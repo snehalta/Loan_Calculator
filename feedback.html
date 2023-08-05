@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Feedback</title>
+</head>
+<style>
+body{
+    margin:0;
+    padding:0;
+    background-image:url(bg.jpg);
+    background-size:cover;
+    background-size: 100% 750px;
+}    
+#but{
+   width:100px;
+   outline:0;
+   padding:5px;
+   font-size:18px;
+   background-color: pink;
+   font-family:sans-sarif; 
+   float:center;
+}
+</style>
+<script>
+function submit()
+{
+  alert("Submitted successfully");
+}
+</script>
+<body>
+<center>
+<h1><marquee>Plz Enter ur Feedback!!</marquee></h1>
+<textarea id="feed" name="Feedback" placeholder="Write Something..." style="height:200px">
+</textarea>
+</center>
+<input type="Submit" id="but" value="Submit" onclick="submit()"/>
+<a href="banner.html"><button type="button" id="but">Home</button></a>
+</body>
+</html>

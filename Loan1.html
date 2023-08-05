@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Loan Calculator</title>
+<script>
+function mywindow()
+{
+  var myWindow = window.open("bd.html","","width=400,height=400");
+}
+function WriteCookie()
+{
+ with(document.CookieWriter)
+ {
+  document.cookie="Lamount="+amount.value+";";
+  alert("Cookie written for loan amount");
+}
+}
+function calculateloan()
+{
+    var amount = document.getElementById('amount').value;
+    if(amount==0 || amount==-1)
+    {
+      mywindow();
+    }
+    var interest_rate = document.getElementById('interest').value;
+    var months = document.getElementById('months').value;
+    var interest = (amount * (interest_rate * 0.01)) / months;
+    var payment = ((amount / months) + interest).toFixed(2);
+    payment=payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+    document.getElementById('payment').innerHTML = 'EMI: Rs'  + payment 
+ 
+}
+</script>
+<link rel="stylesheet" href="mycss.css">
+</head>
+<body id="home">
+<form name="CookieWriter" action="">
+<div class="container">
+<h1>Loan Calculator</h1>
+<h2>!!Easy to calculate EMI here!!</h2>
+<p>Loan Amount:<input id="amount" type="number">Rs</p>
+<p>Interest Rate:<input id="interest" type="number">%</p>
+<p>Months to repay:<input id="months" type="number"></p>
+<button type="button" id="but" onclick = "calculateloan()">Calculate</button>
+<input type="reset" id="butt" value="Reset" onclick="WriteCookie()"/>
+<a href="banner.html"><button type="button" id="but">Home</button></a>
+<h3 id = "payment"></h3>
+</form>
+</div>
+<a href="feedback.html"><button type="button" id="butu">Feedback</button></a>
+</body>
+</html>
+

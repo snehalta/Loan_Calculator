@@ -1,0 +1,76 @@
+ #home{
+    margin:0;
+    padding:0;
+    background-image:url(loan2.jpg);
+    background-size:cover;
+    background-size: 100% 750px;
+}
+body{
+  font-family:sans-sarif;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  Left: 50%;
+  transform: translate(-50%,-50%);
+  width: 450px;
+  height: 550px;
+  padding: 20px 0 0 100px;
+  box-sizing:border-box;
+  background: rgba(0,0,0,.5);
+}
+input{
+ width:80%;
+ padding: 8px;
+ margin top:10px;
+ border:none;
+}
+input:focus{
+ outline: none;
+}
+h1{
+font-size:40px;
+font-style:bold;
+color:white;
+}
+h2{
+font-size:25px;
+font-style:bold;
+}
+p{
+ font-size:25px;
+}
+#but{
+   width:100px;
+   outline:0;
+   padding:5px;
+   font-size:18px;
+   background-color: pink;
+   font-family:sans-sarif;
+
+}
+#payment
+{ 
+  text-align:center;
+  color:white;
+  font-style:bold;
+  font-size:30px;
+  background-color:blue;
+  width:70%;
+ }
+#butt{
+   width:100px;
+   outline:0;
+   padding:5px;
+   font-size:18px;
+   background-color: pink;
+
+}
+#butu{
+   width:100px;
+   outline:0;
+   padding:5px;
+   font-size:18px;
+   background-color: yellow;
+
+}
